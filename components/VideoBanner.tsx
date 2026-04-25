@@ -1,0 +1,38 @@
+import Link from 'next/link'
+
+export default function VideoBanner() {
+  return (
+    <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
+      {/* Video background */}
+      <video
+        className="absolute inset-0 w-full h-full object-cover"
+        autoPlay
+        muted
+        loop
+        playsInline
+        poster=""
+      >
+        <source src="/videos/banner.mp4" type="video/mp4" />
+      </video>
+
+      {/* Dark navy gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#0F1A30]/90 via-[#1B2A4A]/80 to-[#0F1A30]/90" />
+
+      {/* Content */}
+      <div className="relative z-10 text-center text-white px-4 sm:px-6 max-w-4xl mx-auto">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-4">
+          Gutter Cleaning South East Melbourne
+        </h1>
+        <p className="text-lg sm:text-xl text-gray-200 mb-8">
+          Berwick · Cranbourne · Officer · Clyde North · Pakenham and surrounds
+        </p>
+        <Link
+          href="/get-a-quote/"
+          className="inline-block bg-[#2ECC71] hover:bg-green-500 text-white font-semibold text-lg px-8 py-4 rounded-lg transition-colors"
+        >
+          Get a Free Quote
+        </Link>
+      </div>
+    </section>
+  )
+}
