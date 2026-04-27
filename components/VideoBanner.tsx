@@ -1,22 +1,21 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 export default function VideoBanner() {
   return (
     <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Video background */}
-      <video
-        className="absolute inset-0 w-full h-full object-cover"
-        autoPlay
-        muted
-        loop
-        playsInline
-        poster=""
-      >
-        <source src="/videos/banner.mp4" type="video/mp4" />
-      </video>
+      {/* Hero image background */}
+      <Image
+        src="/images/hero.jpg"
+        alt="Professional gutter cleaning in South East Melbourne"
+        fill
+        priority
+        className="object-cover object-center"
+        sizes="100vw"
+      />
 
       {/* Dark navy gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#0F1A30]/90 via-[#1B2A4A]/80 to-[#0F1A30]/90" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#0F1A30]/80 via-[#1B2A4A]/70 to-[#0F1A30]/85" />
 
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 sm:px-6 max-w-4xl mx-auto">
