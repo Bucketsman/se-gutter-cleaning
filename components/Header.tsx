@@ -21,7 +21,10 @@ export default function Header() {
               Home
             </Link>
             <Link href="/gutter-cleaning/" className="text-gray-200 hover:text-white transition-colors text-sm font-medium">
-              Gutter Cleaning
+              Our Services
+            </Link>
+            <Link href="/blog/" className="text-gray-200 hover:text-white transition-colors text-sm font-medium">
+              Gutter Cleaning Advice
             </Link>
             <Link href="/about/" className="text-gray-200 hover:text-white transition-colors text-sm font-medium">
               About
@@ -59,7 +62,10 @@ export default function Header() {
               Home
             </Link>
             <Link href="/gutter-cleaning/" className="text-gray-200 hover:text-white text-sm font-medium py-2 border-b border-[#0F1A30]" onClick={() => setMobileOpen(false)}>
-              Gutter Cleaning
+              Our Services
+            </Link>
+            <Link href="/blog/" className="text-gray-200 hover:text-white text-sm font-medium py-2 border-b border-[#0F1A30]" onClick={() => setMobileOpen(false)}>
+              Gutter Cleaning Advice
             </Link>
             <Link href="/about/" className="text-gray-200 hover:text-white text-sm font-medium py-2 border-b border-[#0F1A30]" onClick={() => setMobileOpen(false)}>
               About

@@ -7,21 +7,22 @@ export interface BreadcrumbItem {
 
 interface BreadcrumbProps {
   items: BreadcrumbItem[]
+  light?: boolean
 }
 
-export default function Breadcrumb({ items }: BreadcrumbProps) {
+export default function Breadcrumb({ items, light = false }: BreadcrumbProps) {
   return (
-    <nav aria-label="Breadcrumb" className="text-sm text-gray-500 mb-6">
+    <nav aria-label="Breadcrumb" className={`text-sm mb-4 ${light ? 'text-gray-400' : 'text-gray-500'}`}>
       <ol className="flex flex-wrap items-center gap-1">
         {items.map((item, index) => (
           <li key={index} className="flex items-center gap-1">
-            {index > 0 && <span className="text-gray-400">›</span>}
+            {index > 0 && <span className={light ? 'text-gray-500' : 'text-gray-400'}>›</span>}
             {item.href ? (
-              <Link href={item.href} className="hover:text-[#1B2A4A] transition-colors">
+              <Link href={item.href} className={`transition-colors ${light ? 'text-gray-400 hover:text-white' : 'hover:text-[#1B2A4A]'}`}>
                 {item.label}
               </Link>
             ) : (
-              <span className="text-gray-700 font-medium">{item.label}</span>
+              <span className={light ? 'text-gray-200 font-medium' : 'text-gray-700 font-medium'}>{item.label}</span>
             )}
           </li>
         ))}
