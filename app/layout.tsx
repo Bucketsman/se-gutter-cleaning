@@ -14,6 +14,9 @@ export const metadata: Metadata = {
   },
   description: 'Professional gutter cleaning across South East Melbourne.',
   metadataBase: new URL('https://seguttercleaning.com.au'),
+  verification: {
+    google: 'sHFnSJwsguF23RzttdKdr_YymXfS8LOIkK38niEmYnM',
+  },
 }
 
 export default function RootLayout({
