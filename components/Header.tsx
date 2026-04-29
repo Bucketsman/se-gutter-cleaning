@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useState } from 'react'
+import Logo from '@/components/Logo'
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false)
@@ -11,9 +12,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="text-white font-bold text-xl tracking-tight">
-            SE Gutter Cleaning
-          </Link>
+          <Logo />
 
           {/* Desktop nav */}
           <nav className="hidden md:flex items-center gap-6">
