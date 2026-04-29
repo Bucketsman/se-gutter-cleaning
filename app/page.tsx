@@ -44,23 +44,26 @@ const faqs: FAQItem[] = [
 
 const localBusinessSchema = {
   '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
+  '@type': ['LocalBusiness', 'HomeAndConstructionBusiness'],
   name: 'SE Gutter Cleaning',
   url: 'https://seguttercleaning.com.au',
+  image: 'https://seguttercleaning.com.au/images/hero.jpg',
   description:
-    'Professional gutter cleaning across South East Melbourne. Serving the Casey and Cardinia LGAs.',
+    'Professional gutter cleaning across South East Melbourne. Serving the Casey and Cardinia LGAs. Full debris clearance, downpipe flushing and roofline inspection.',
   areaServed: [
-    'Berwick',
-    'Narre Warren South',
-    'Cranbourne',
-    'Officer',
-    'Clyde North',
-    'Pakenham',
-    'Berwick Waters',
-    'Hampton Park',
+    { '@type': 'City', name: 'Berwick', containedInPlace: { '@type': 'State', name: 'Victoria' } },
+    { '@type': 'City', name: 'Narre Warren South', containedInPlace: { '@type': 'State', name: 'Victoria' } },
+    { '@type': 'City', name: 'Cranbourne', containedInPlace: { '@type': 'State', name: 'Victoria' } },
+    { '@type': 'City', name: 'Officer', containedInPlace: { '@type': 'State', name: 'Victoria' } },
+    { '@type': 'City', name: 'Clyde North', containedInPlace: { '@type': 'State', name: 'Victoria' } },
+    { '@type': 'City', name: 'Pakenham', containedInPlace: { '@type': 'State', name: 'Victoria' } },
+    { '@type': 'City', name: 'Berwick Waters', containedInPlace: { '@type': 'State', name: 'Victoria' } },
+    { '@type': 'City', name: 'Hampton Park', containedInPlace: { '@type': 'State', name: 'Victoria' } },
   ],
   serviceType: 'Gutter Cleaning',
   priceRange: '$150 - $320',
+  currenciesAccepted: 'AUD',
+  paymentAccepted: 'Cash, Bank Transfer',
 }
 
 const faqSchema = {
@@ -69,10 +72,7 @@ const faqSchema = {
   mainEntity: faqs.map((faq) => ({
     '@type': 'Question',
     name: faq.question,
-    acceptedAnswer: {
-      '@type': 'Answer',
-      text: faq.answer,
-    },
+    acceptedAnswer: { '@type': 'Answer', text: faq.answer },
   })),
 }
 
@@ -88,15 +88,15 @@ export default function HomePage() {
     <>
       <SchemaMarkup schema={[localBusinessSchema, faqSchema]} />
 
-      {/* Hero Video Banner */}
+      {/* Hero Banner */}
       <VideoBanner />
 
       {/* Trust Bar */}
-      <section className="bg-[#1A3D2B] py-4">
+      <section className="bg-[#1A3D2B] py-5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap justify-center gap-x-8 gap-y-2">
+          <div className="grid grid-cols-2 sm:flex sm:flex-wrap justify-center gap-x-8 gap-y-3">
             {trustItems.map((item) => (
-              <div key={item} className="flex items-center gap-2 text-white text-sm font-medium">
+              <div key={item} className="flex items-center justify-center gap-2 text-white text-sm font-medium">
                 <span className="text-[#2ECC71] font-bold">&#10003;</span>
                 {item}
               </div>
@@ -105,39 +105,58 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Intro */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-bold text-[#1A3D2B] mb-6">What We Do</h2>
-          <p className="text-gray-700 leading-relaxed text-base">
-            Gutters in South East Melbourne take a beating. The established suburbs around Berwick and Narre Warren sit under dense eucalypt canopy. Gutters fill fast, especially heading into autumn and after spring storms. Further out in Officer and Clyde North, newer homes have less tree coverage now, but the surrounding bushland means debris still builds up faster than most homeowners expect. A blocked gutter isn&apos;t just an inconvenience. Water backing up into eaves and fascia boards causes damage that costs far more to fix than a regular clean. We keep that from happening. Every job includes a full clearance of leaves and debris, downpipe flushing, and a roofline check. You get a written job report when we&apos;re done.
+      {/* What We Do */}
+      <section className="py-14 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl mx-auto text-center md:text-left">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#1A3D2B] mb-5">What We Do</h2>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Gutters in South East Melbourne take a beating. The established suburbs around Berwick and Narre Warren sit under dense eucalypt canopy — gutters fill fast, especially heading into autumn and after spring storms.
           </p>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            Further out in Officer and Clyde North, newer homes have less tree coverage, but the surrounding bushland means debris builds up faster than most homeowners expect.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-8">
+            A blocked gutter isn&apos;t just an inconvenience. Water backing up into eaves and fascia boards causes damage that costs far more to fix than a regular clean. Every job includes a full clearance, downpipe flushing and a roofline check — and you get a written job report when we&apos;re done.
+          </p>
+          <Link
+            href="/get-a-quote/"
+            className="inline-block bg-[#2ECC71] hover:bg-green-500 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
+          >
+            Get a Free Quote
+          </Link>
         </div>
       </section>
 
       {/* Areas We Service */}
-      <section className="py-16 bg-[#F8F9FA] px-4 sm:px-6 lg:px-8">
+      <section className="py-14 bg-[#F8F9FA] px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-bold text-[#1A3D2B] mb-8">Areas We Service</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#1A3D2B] mb-2 text-center md:text-left">
+            Areas We Service
+          </h2>
+          <p className="text-gray-600 mb-8 text-center md:text-left">
+            Casey and Cardinia LGAs across South East Melbourne.
+          </p>
           <SuburbGrid />
         </div>
       </section>
 
       {/* How It Works */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-bold text-[#1A3D2B] mb-8">How It Works</h2>
-          <div className="space-y-6">
+      <section className="py-14 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#1A3D2B] mb-8 text-center md:text-left">
+            How It Works
+          </h2>
+          <div className="space-y-5">
             {[
               'Submit a quote request with your suburb and property details.',
               'We confirm availability and pricing within 24 hours.',
               'We clean, inspect and send you a job report when complete.',
             ].map((step, i) => (
               <div key={i} className="flex items-start gap-4">
-                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#1A3D2B] text-white flex items-center justify-center font-bold text-sm">
+                <span className="flex-shrink-0 w-9 h-9 rounded-full bg-[#1A3D2B] text-white flex items-center justify-center font-bold text-sm">
                   {i + 1}
                 </span>
-                <p className="text-gray-700 pt-1">{step}</p>
+                <p className="text-gray-700 pt-1.5">{step}</p>
               </div>
             ))}
           </div>
@@ -145,9 +164,11 @@ export default function HomePage() {
       </section>
 
       {/* FAQ */}
-      <section className="py-16 bg-[#F8F9FA] px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-bold text-[#1A3D2B] mb-8">FAQ</h2>
+      <section className="py-14 bg-[#F8F9FA] px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#1A3D2B] mb-8 text-center md:text-left">
+            Frequently Asked Questions
+          </h2>
           <FAQAccordion items={faqs} />
         </div>
       </section>

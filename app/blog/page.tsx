@@ -5,7 +5,7 @@ import SchemaMarkup from '@/components/SchemaMarkup'
 
 export const metadata: Metadata = {
   title: 'Gutter Cleaning Blog | SE Gutter Cleaning',
-  description: 'Gutter cleaning tips, cost guides and local advice for SE Melbourne homeowners.',
+  description: 'Gutter cleaning guides for SE Melbourne homeowners. Covering costs, timing, suburb-specific advice and what happens when gutters go too long without a clean.',
   alternates: {
     canonical: 'https://seguttercleaning.com.au/blog/',
   },
@@ -16,7 +16,21 @@ const breadcrumbSchema = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://seguttercleaning.com.au/' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://seguttercleaning.com.au/blog/' },
+    { '@type': 'ListItem', position: 2, name: 'Gutter Cleaning Advice', item: 'https://seguttercleaning.com.au/blog/' },
+  ],
+}
+
+const itemListSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: 'Gutter Cleaning Guides for SE Melbourne',
+  url: 'https://seguttercleaning.com.au/blog/',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, url: 'https://seguttercleaning.com.au/blog/gutter-cleaning-cost-melbourne/', name: 'Gutter Cleaning Cost in Melbourne: 2025 Price Guide' },
+    { '@type': 'ListItem', position: 2, url: 'https://seguttercleaning.com.au/blog/when-to-clean-gutters-melbourne/', name: 'When to Clean Your Gutters in Melbourne: A Seasonal Guide' },
+    { '@type': 'ListItem', position: 3, url: 'https://seguttercleaning.com.au/blog/blocked-gutters-damage-melbourne/', name: "What Happens If You Don't Clean Your Gutters in Melbourne" },
+    { '@type': 'ListItem', position: 4, url: 'https://seguttercleaning.com.au/blog/gutter-cleaning-berwick/', name: 'Gutter Cleaning in Berwick: What Local Homeowners Need to Know' },
+    { '@type': 'ListItem', position: 5, url: 'https://seguttercleaning.com.au/blog/gutter-cleaning-clyde-north-officer-new-home/', name: "New Home in Clyde North or Officer? Here's What You Need to Know About Your Gutters" },
   ],
 }
 
@@ -56,13 +70,13 @@ const posts = [
 export default function BlogIndexPage() {
   return (
     <>
-      <SchemaMarkup schema={breadcrumbSchema} />
+      <SchemaMarkup schema={[breadcrumbSchema, itemListSchema]} />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <Breadcrumb
           items={[
             { label: 'Home', href: '/' },
-            { label: 'Blog' },
+            { label: 'Gutter Cleaning Advice' },
           ]}
         />
 

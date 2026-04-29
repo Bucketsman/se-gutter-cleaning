@@ -17,6 +17,15 @@ export const metadata: Metadata = {
   verification: {
     google: 'sHFnSJwsguF23RzttdKdr_YymXfS8LOIkK38niEmYnM',
   },
+  openGraph: {
+    type: 'website',
+    siteName: 'SE Gutter Cleaning',
+    locale: 'en_AU',
+    images: [{ url: '/images/hero.jpg', width: 1200, height: 800, alt: 'SE Gutter Cleaning — South East Melbourne' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+  },
 }
 
 export default function RootLayout({

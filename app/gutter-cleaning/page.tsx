@@ -50,10 +50,24 @@ const serviceSchema = {
   '@context': 'https://schema.org',
   '@type': 'Service',
   name: 'Gutter Cleaning',
-  provider: { '@type': 'LocalBusiness', name: 'SE Gutter Cleaning' },
-  areaServed: 'South East Melbourne',
+  serviceType: 'Gutter Cleaning',
+  provider: {
+    '@type': 'LocalBusiness',
+    name: 'SE Gutter Cleaning',
+    url: 'https://seguttercleaning.com.au',
+  },
+  areaServed: [
+    'Berwick', 'Narre Warren South', 'Cranbourne', 'Officer',
+    'Clyde North', 'Pakenham', 'Berwick Waters', 'Hampton Park',
+  ],
   description:
-    'Professional gutter cleaning including debris clearance, downpipe flushing and roofline inspection.',
+    'Professional gutter cleaning including full debris clearance from all gutters and valleys, downpipe flushing and roofline inspection. Written job report on completion.',
+  offers: {
+    '@type': 'Offer',
+    priceRange: '\$150 - \$320',
+    priceCurrency: 'AUD',
+    eligibleRegion: 'South East Melbourne',
+  },
 }
 
 const faqSchema = {
