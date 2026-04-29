@@ -15,7 +15,7 @@ export default function VideoBanner() {
       />
 
       {/* Dark navy gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-[#0F1A30]/80 via-[#1B2A4A]/70 to-[#0F1A30]/85" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#0D2B1C]/80 via-[#1A3D2B]/70 to-[#0D2B1C]/85" />
 
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 sm:px-6 max-w-4xl mx-auto">

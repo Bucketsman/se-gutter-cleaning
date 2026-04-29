@@ -66,19 +66,19 @@ export default function BlogIndexPage() {
           ]}
         />
 
-        <h1 className="text-3xl sm:text-4xl font-bold text-[#1B2A4A] mb-4">
+        <h1 className="text-3xl sm:text-4xl font-bold text-[#1A3D2B] mb-4">
           Gutter Cleaning Guides for SE Melbourne
         </h1>
         <p className="text-gray-600 mb-10">Practical advice for homeowners across the Casey and Cardinia corridors.</p>
 
         <div className="space-y-6">
           {posts.map((post) => (
-            <article key={post.slug} className="border border-gray-200 rounded-xl p-6 hover:border-[#1B2A4A] transition-colors">
+            <article key={post.slug} className="border border-gray-200 rounded-xl p-6 hover:border-[#1A3D2B] transition-colors">
               <Link href={`/blog/${post.slug}/`}>
-                <h2 className="text-xl font-bold text-[#1B2A4A] hover:underline mb-2">{post.title}</h2>
+                <h2 className="text-xl font-bold text-[#1A3D2B] hover:underline mb-2">{post.title}</h2>
               </Link>
               <p className="text-gray-600 text-sm leading-relaxed">{post.excerpt}</p>
-              <Link href={`/blog/${post.slug}/`} className="inline-block mt-4 text-sm font-medium text-[#1B2A4A] hover:underline">
+              <Link href={`/blog/${post.slug}/`} className="inline-block mt-4 text-sm font-medium text-[#1A3D2B] hover:underline">
                 Read more &rarr;
               </Link>
             </article>

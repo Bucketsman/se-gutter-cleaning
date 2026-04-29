@@ -18,7 +18,7 @@ export default function SuburbGrid() {
         <Link
           key={suburb.href}
           href={suburb.href}
-          className="bg-[#1B2A4A] hover:bg-[#0F1A30] text-white text-center py-4 px-3 rounded-lg font-medium text-sm transition-colors"
+          className="bg-[#1A3D2B] hover:bg-[#0D2B1C] text-white text-center py-4 px-3 rounded-lg font-medium text-sm transition-colors"
         >
           {suburb.label}
         </Link>

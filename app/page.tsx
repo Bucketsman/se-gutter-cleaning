@@ -92,7 +92,7 @@ export default function HomePage() {
       <VideoBanner />
 
       {/* Trust Bar */}
-      <section className="bg-[#1B2A4A] py-4">
+      <section className="bg-[#1A3D2B] py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-2">
             {trustItems.map((item) => (
@@ -108,7 +108,7 @@ export default function HomePage() {
       {/* Intro */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-bold text-[#1B2A4A] mb-6">What We Do</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#1A3D2B] mb-6">What We Do</h2>
           <p className="text-gray-700 leading-relaxed text-base">
             Gutters in South East Melbourne take a beating. The established suburbs around Berwick and Narre Warren sit under dense eucalypt canopy. Gutters fill fast, especially heading into autumn and after spring storms. Further out in Officer and Clyde North, newer homes have less tree coverage now, but the surrounding bushland means debris still builds up faster than most homeowners expect. A blocked gutter isn&apos;t just an inconvenience. Water backing up into eaves and fascia boards causes damage that costs far more to fix than a regular clean. We keep that from happening. Every job includes a full clearance of leaves and debris, downpipe flushing, and a roofline check. You get a written job report when we&apos;re done.
           </p>
@@ -118,7 +118,7 @@ export default function HomePage() {
       {/* Areas We Service */}
       <section className="py-16 bg-[#F8F9FA] px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-bold text-[#1B2A4A] mb-8">Areas We Service</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#1A3D2B] mb-8">Areas We Service</h2>
           <SuburbGrid />
         </div>
       </section>
@@ -126,7 +126,7 @@ export default function HomePage() {
       {/* How It Works */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-bold text-[#1B2A4A] mb-8">How It Works</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#1A3D2B] mb-8">How It Works</h2>
           <div className="space-y-6">
             {[
               'Submit a quote request with your suburb and property details.',
@@ -134,7 +134,7 @@ export default function HomePage() {
               'We clean, inspect and send you a job report when complete.',
             ].map((step, i) => (
               <div key={i} className="flex items-start gap-4">
-                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#1B2A4A] text-white flex items-center justify-center font-bold text-sm">
+                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#1A3D2B] text-white flex items-center justify-center font-bold text-sm">
                   {i + 1}
                 </span>
                 <p className="text-gray-700 pt-1">{step}</p>
@@ -147,13 +147,13 @@ export default function HomePage() {
       {/* FAQ */}
       <section className="py-16 bg-[#F8F9FA] px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-bold text-[#1B2A4A] mb-8">FAQ</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-[#1A3D2B] mb-8">FAQ</h2>
           <FAQAccordion items={faqs} />
         </div>
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-[#1B2A4A] text-center px-4 sm:px-6 lg:px-8">
+      <section className="py-20 bg-[#1A3D2B] text-center px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
             Get a Free Quote for Your SE Melbourne Home

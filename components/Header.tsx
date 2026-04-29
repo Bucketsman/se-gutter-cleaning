@@ -7,7 +7,7 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 bg-[#1B2A4A] shadow-md">
+    <header className="sticky top-0 z-50 bg-[#1A3D2B] shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -58,16 +58,16 @@ export default function Header() {
         {/* Mobile menu */}
         {mobileOpen && (
           <div className="md:hidden pb-4 flex flex-col gap-3">
-            <Link href="/" className="text-gray-200 hover:text-white text-sm font-medium py-2 border-b border-[#0F1A30]" onClick={() => setMobileOpen(false)}>
+            <Link href="/" className="text-gray-200 hover:text-white text-sm font-medium py-2 border-b border-[#0D2B1C]" onClick={() => setMobileOpen(false)}>
               Home
             </Link>
-            <Link href="/gutter-cleaning/" className="text-gray-200 hover:text-white text-sm font-medium py-2 border-b border-[#0F1A30]" onClick={() => setMobileOpen(false)}>
+            <Link href="/gutter-cleaning/" className="text-gray-200 hover:text-white text-sm font-medium py-2 border-b border-[#0D2B1C]" onClick={() => setMobileOpen(false)}>
               Our Services
             </Link>
-            <Link href="/blog/" className="text-gray-200 hover:text-white text-sm font-medium py-2 border-b border-[#0F1A30]" onClick={() => setMobileOpen(false)}>
+            <Link href="/blog/" className="text-gray-200 hover:text-white text-sm font-medium py-2 border-b border-[#0D2B1C]" onClick={() => setMobileOpen(false)}>
               Gutter Cleaning Advice
             </Link>
-            <Link href="/about/" className="text-gray-200 hover:text-white text-sm font-medium py-2 border-b border-[#0F1A30]" onClick={() => setMobileOpen(false)}>
+            <Link href="/about/" className="text-gray-200 hover:text-white text-sm font-medium py-2 border-b border-[#0D2B1C]" onClick={() => setMobileOpen(false)}>
               About
             </Link>
             <Link

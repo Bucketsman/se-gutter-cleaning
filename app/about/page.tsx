@@ -55,7 +55,7 @@ export default function AboutPage() {
           ]}
         />
 
-        <h1 className="text-3xl sm:text-4xl font-bold text-[#1B2A4A] mb-4">
+        <h1 className="text-3xl sm:text-4xl font-bold text-[#1A3D2B] mb-4">
           About SE Gutter Cleaning
         </h1>
         <p className="text-gray-700 leading-relaxed mb-10">
@@ -63,14 +63,14 @@ export default function AboutPage() {
         </p>
 
         <section className="mb-10">
-          <h2 className="text-2xl font-bold text-[#1B2A4A] mb-4">What We Do</h2>
+          <h2 className="text-2xl font-bold text-[#1A3D2B] mb-4">What We Do</h2>
           <p className="text-gray-700 leading-relaxed">
             We clean gutters on single and double storey residential homes across SE Melbourne&apos;s established and growth suburbs. Every job covers the same scope: debris clearance, downpipe flushing, roofline inspection and a written job report when complete.
           </p>
         </section>
 
         <section className="mb-10">
-          <h2 className="text-2xl font-bold text-[#1B2A4A] mb-4">Our Service Area</h2>
+          <h2 className="text-2xl font-bold text-[#1A3D2B] mb-4">Our Service Area</h2>
           <p className="text-gray-700 leading-relaxed mb-6">
             We service Berwick, Narre Warren South, Cranbourne, Officer, Clyde North, Pakenham, Berwick Waters, Hampton Park and surrounding suburbs within the Casey and Cardinia corridors. If you&apos;re unsure whether we cover your area, submit a quote request and we&apos;ll confirm.
           </p>
@@ -85,14 +85,14 @@ export default function AboutPage() {
               { href: '/gutter-cleaning/berwick-waters/', label: 'Berwick Waters' },
               { href: '/gutter-cleaning/hampton-park/', label: 'Hampton Park' },
             ].map((s) => (
-              <Link key={s.href} href={s.href} className="bg-[#1B2A4A] hover:bg-[#0F1A30] text-white px-4 py-2 rounded text-sm font-medium transition-colors">
+              <Link key={s.href} href={s.href} className="bg-[#1A3D2B] hover:bg-[#0D2B1C] text-white px-4 py-2 rounded text-sm font-medium transition-colors">
                 {s.label}
               </Link>
             ))}
           </div>
         </section>
 
-        <div className="bg-[#1B2A4A] rounded-xl p-8 text-center">
+        <div className="bg-[#1A3D2B] rounded-xl p-8 text-center">
           <h2 className="text-xl font-bold text-white mb-3">Ready to Book?</h2>
           <p className="text-gray-300 mb-6 text-sm">Get a firm quote within 24 hours. No obligation.</p>
           <Link href="/get-a-quote/" className="inline-block bg-[#2ECC71] hover:bg-green-500 text-white font-semibold px-6 py-3 rounded-lg transition-colors">

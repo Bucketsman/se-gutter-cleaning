@@ -65,7 +65,7 @@ export default function HamptonParkPage() {
           ]}
         />
 
-        <h1 className="text-3xl sm:text-4xl font-bold text-[#1B2A4A] mb-4">
+        <h1 className="text-3xl sm:text-4xl font-bold text-[#1A3D2B] mb-4">
           Gutter Cleaning in Hampton Park
         </h1>
         <p className="text-gray-700 leading-relaxed mb-10">
@@ -73,14 +73,14 @@ export default function HamptonParkPage() {
         </p>
 
         <section className="mb-10">
-          <h2 className="text-2xl font-bold text-[#1B2A4A] mb-4">Why Hampton Park Gutters Need Regular Attention</h2>
+          <h2 className="text-2xl font-bold text-[#1A3D2B] mb-4">Why Hampton Park Gutters Need Regular Attention</h2>
           <p className="text-gray-700 leading-relaxed">
             Hampton Park&apos;s housing density means properties sit close together with limited roof drainage options. Gutters that overflow don&apos;t just damage the property they&apos;re on, they affect fencing, shared boundaries and neighbouring yards. Older homes throughout Hampton Park frequently have original guttering that hasn&apos;t been upgraded. Gutters from the 1970s and 1980s are more prone to rust, sagging joins and overflow than newer profiles. Regular cleaning reduces the stress on ageing guttering and extends its life. We provide a firm quote before any work starts.
           </p>
         </section>
 
         <section className="mb-10">
-          <h2 className="text-2xl font-bold text-[#1B2A4A] mb-4">What&apos;s Included</h2>
+          <h2 className="text-2xl font-bold text-[#1A3D2B] mb-4">What&apos;s Included</h2>
           <ul className="space-y-3">
             {[
               'Full clearance of all gutters and valleys.',
@@ -97,15 +97,15 @@ export default function HamptonParkPage() {
         </section>
 
         <section className="mb-10">
-          <h2 className="text-2xl font-bold text-[#1B2A4A] mb-4">Pricing</h2>
+          <h2 className="text-2xl font-bold text-[#1A3D2B] mb-4">Pricing</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
             <div className="border border-gray-200 rounded-lg p-5 text-center">
               <p className="text-gray-500 text-sm mb-1">Single storey</p>
-              <p className="text-2xl font-bold text-[#1B2A4A]">$150 – $220</p>
+              <p className="text-2xl font-bold text-[#1A3D2B]">$150 – $220</p>
             </div>
             <div className="border border-gray-200 rounded-lg p-5 text-center">
               <p className="text-gray-500 text-sm mb-1">Double storey</p>
-              <p className="text-2xl font-bold text-[#1B2A4A]">$220 – $320</p>
+              <p className="text-2xl font-bold text-[#1A3D2B]">$220 – $320</p>
             </div>
           </div>
           <p className="text-gray-600 text-sm">
@@ -114,7 +114,7 @@ export default function HamptonParkPage() {
         </section>
 
         <section className="mb-10">
-          <h2 className="text-2xl font-bold text-[#1B2A4A] mb-4">Nearby Areas</h2>
+          <h2 className="text-2xl font-bold text-[#1A3D2B] mb-4">Nearby Areas</h2>
           <div className="flex flex-wrap gap-2">
             {[
               { href: '/gutter-cleaning/narre-warren-south/', label: 'Narre Warren South' },
@@ -122,7 +122,7 @@ export default function HamptonParkPage() {
               { href: '/gutter-cleaning/cranbourne/', label: 'Cranbourne' },
               { href: '/gutter-cleaning/officer/', label: 'Officer' },
             ].map((s) => (
-              <Link key={s.href} href={s.href} className="bg-gray-100 hover:bg-gray-200 text-[#1B2A4A] px-4 py-2 rounded text-sm font-medium transition-colors">
+              <Link key={s.href} href={s.href} className="bg-gray-100 hover:bg-gray-200 text-[#1A3D2B] px-4 py-2 rounded text-sm font-medium transition-colors">
                 {s.label}
               </Link>
             ))}
@@ -130,11 +130,11 @@ export default function HamptonParkPage() {
         </section>
 
         <section className="mb-10">
-          <h2 className="text-2xl font-bold text-[#1B2A4A] mb-6">FAQ</h2>
+          <h2 className="text-2xl font-bold text-[#1A3D2B] mb-6">FAQ</h2>
           <FAQAccordion items={faqs} />
         </section>
 
-        <div className="bg-[#1B2A4A] rounded-xl p-8 text-center">
+        <div className="bg-[#1A3D2B] rounded-xl p-8 text-center">
           <h2 className="text-xl font-bold text-white mb-3">Get a Quote for Hampton Park</h2>
           <p className="text-gray-300 mb-6 text-sm">Same-week availability. Firm quote within 24 hours.</p>
           <Link href="/get-a-quote/" className="inline-block bg-[#2ECC71] hover:bg-green-500 text-white font-semibold px-6 py-3 rounded-lg transition-colors">

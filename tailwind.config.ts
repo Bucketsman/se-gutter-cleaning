@@ -13,8 +13,8 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         navy: {
-          DEFAULT: "#1B2A4A",
-          dark: "#0F1A30",
+          DEFAULT: "#1A3D2B",
+          dark: "#0D2B1C",
         },
         accent: "#2ECC71",
       },

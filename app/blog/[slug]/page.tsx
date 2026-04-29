@@ -79,7 +79,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
       <SchemaMarkup schema={schemas} />
 
       {/* Article header */}
-      <div className="bg-[#1B2A4A] py-12">
+      <div className="bg-[#1A3D2B] py-12">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <Breadcrumb
             items={[
@@ -103,15 +103,15 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
       {/* Article body */}
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <article className="prose prose-lg prose-slate max-w-none
-          prose-headings:text-[#1B2A4A] prose-headings:font-bold
+          prose-headings:text-[#1A3D2B] prose-headings:font-bold
           prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-4 prose-h2:pb-2 prose-h2:border-b prose-h2:border-gray-200
           prose-h3:text-xl prose-h3:mt-8 prose-h3:mb-3
           prose-p:text-gray-700 prose-p:leading-relaxed prose-p:mb-5
           prose-li:text-gray-700 prose-li:leading-relaxed
           prose-ul:my-4 prose-ul:space-y-2
           prose-ol:my-4 prose-ol:space-y-2
-          prose-strong:text-[#1B2A4A] prose-strong:font-semibold
-          prose-a:text-[#1B2A4A] prose-a:underline hover:prose-a:text-[#2ECC71]
+          prose-strong:text-[#1A3D2B] prose-strong:font-semibold
+          prose-a:text-[#1A3D2B] prose-a:underline hover:prose-a:text-[#2ECC71]
         ">
           <MDXRemote source={content} />
         </article>
@@ -119,13 +119,13 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
         {/* FAQ section */}
         {faqItems.length > 0 && (
           <section className="mt-14 pt-10 border-t border-gray-200">
-            <h2 className="text-2xl font-bold text-[#1B2A4A] mb-6">Frequently Asked Questions</h2>
+            <h2 className="text-2xl font-bold text-[#1A3D2B] mb-6">Frequently Asked Questions</h2>
             <FAQAccordion items={faqItems} />
           </section>
         )}
 
         {/* CTA */}
-        <div className="mt-14 bg-[#1B2A4A] rounded-xl p-8 text-center">
+        <div className="mt-14 bg-[#1A3D2B] rounded-xl p-8 text-center">
           <h2 className="text-xl font-bold text-white mb-2">Ready to Book a Clean?</h2>
           <p className="text-gray-300 mb-6">Get a firm quote within 24 hours. No obligation.</p>
           <Link href="/get-a-quote/" className="inline-block bg-[#2ECC71] hover:bg-green-500 text-white font-semibold px-8 py-3 rounded-lg transition-colors">
@@ -135,7 +135,7 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
 
         {/* Back to guides */}
         <div className="mt-8 text-center">
-          <Link href="/blog/" className="text-[#1B2A4A] text-sm font-medium hover:underline">
+          <Link href="/blog/" className="text-[#1A3D2B] text-sm font-medium hover:underline">
             ← Back to Gutter Cleaning Advice
           </Link>
         </div>

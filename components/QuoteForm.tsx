@@ -50,7 +50,7 @@ export default function QuoteForm() {
           name="firstName"
           type="text"
           required
-          className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#1B2A4A] focus:border-transparent"
+          className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#1A3D2B] focus:border-transparent"
           placeholder="Your first name"
         />
       </div>
@@ -65,7 +65,7 @@ export default function QuoteForm() {
           name="email"
           type="email"
           required
-          className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#1B2A4A] focus:border-transparent"
+          className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#1A3D2B] focus:border-transparent"
           placeholder="you@example.com"
         />
       </div>
@@ -79,7 +79,7 @@ export default function QuoteForm() {
           id="suburb"
           name="suburb"
           required
-          className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#1B2A4A] focus:border-transparent bg-white"
+          className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#1A3D2B] focus:border-transparent bg-white"
         >
           <option value="">Select your suburb</option>
           <option value="Berwick">Berwick</option>
@@ -102,7 +102,7 @@ export default function QuoteForm() {
         <select
           id="propertyType"
           name="propertyType"
-          className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#1B2A4A] focus:border-transparent bg-white"
+          className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#1A3D2B] focus:border-transparent bg-white"
         >
           <option value="">Select property type</option>
           <option value="Single storey">Single storey</option>
@@ -121,7 +121,7 @@ export default function QuoteForm() {
           id="notes"
           name="notes"
           rows={4}
-          className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#1B2A4A] focus:border-transparent resize-none"
+          className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#1A3D2B] focus:border-transparent resize-none"
           placeholder="Access details, when gutters were last cleaned, any known issues..."
         />
       </div>
@@ -133,7 +133,7 @@ export default function QuoteForm() {
       <button
         type="submit"
         disabled={status === 'submitting'}
-        className="w-full bg-[#1B2A4A] hover:bg-[#0F1A30] text-white font-semibold py-3 px-6 rounded-lg transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
+        className="w-full bg-[#1A3D2B] hover:bg-[#0D2B1C] text-white font-semibold py-3 px-6 rounded-lg transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
       >
         {status === 'submitting' ? 'Sending...' : 'Send My Quote Request'}
       </button>

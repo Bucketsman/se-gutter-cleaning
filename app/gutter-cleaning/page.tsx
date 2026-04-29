@@ -99,7 +99,7 @@ export default function GutterCleaningPage() {
           ]}
         />
 
-        <h1 className="text-3xl sm:text-4xl font-bold text-[#1B2A4A] mb-4">
+        <h1 className="text-3xl sm:text-4xl font-bold text-[#1A3D2B] mb-4">
           Professional Gutter Cleaning in South East Melbourne
         </h1>
         <p className="text-gray-700 leading-relaxed text-base mb-10">
@@ -108,7 +108,7 @@ export default function GutterCleaningPage() {
 
         {/* What's Included */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-[#1B2A4A] mb-6">What&apos;s Included</h2>
+          <h2 className="text-2xl font-bold text-[#1A3D2B] mb-6">What&apos;s Included</h2>
           <div className="space-y-4">
             {[
               {
@@ -131,7 +131,7 @@ export default function GutterCleaningPage() {
               <div key={item.title} className="flex items-start gap-3 p-4 bg-[#F8F9FA] rounded-lg">
                 <span className="text-[#2ECC71] font-bold text-lg flex-shrink-0">&#10003;</span>
                 <div>
-                  <p className="font-semibold text-[#1B2A4A]">{item.title}</p>
+                  <p className="font-semibold text-[#1A3D2B]">{item.title}</p>
                   <p className="text-gray-600 text-sm mt-1">{item.body}</p>
                 </div>
               </div>
@@ -141,7 +141,7 @@ export default function GutterCleaningPage() {
 
         {/* Why Regular Cleaning Matters */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-[#1B2A4A] mb-4">Why Regular Cleaning Matters</h2>
+          <h2 className="text-2xl font-bold text-[#1A3D2B] mb-4">Why Regular Cleaning Matters</h2>
           <p className="text-gray-700 leading-relaxed">
             Melbourne&apos;s weather does a good job of filling gutters. Autumn brings the bulk of leaf fall from the gum trees that line most established SE Melbourne streets. Spring storms push debris into downpipes and valleys. Let that build up for a season or two and you end up with water overflowing into fascia boards, eaves and, in worse cases, ceiling cavities. The repair bill for water-damaged eaves runs well above what a regular gutter clean costs. Most Melbourne homes need cleaning at minimum once a year. Leafy suburbs like Berwick and Narre Warren typically need it twice.
           </p>
@@ -149,15 +149,15 @@ export default function GutterCleaningPage() {
 
         {/* Pricing */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-[#1B2A4A] mb-6">Pricing</h2>
+          <h2 className="text-2xl font-bold text-[#1A3D2B] mb-6">Pricing</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
             <div className="border border-gray-200 rounded-lg p-5 text-center">
               <p className="text-gray-500 text-sm mb-1">Single storey</p>
-              <p className="text-2xl font-bold text-[#1B2A4A]">$150 – $220</p>
+              <p className="text-2xl font-bold text-[#1A3D2B]">$150 – $220</p>
             </div>
             <div className="border border-gray-200 rounded-lg p-5 text-center">
               <p className="text-gray-500 text-sm mb-1">Double storey</p>
-              <p className="text-2xl font-bold text-[#1B2A4A]">$220 – $320</p>
+              <p className="text-2xl font-bold text-[#1A3D2B]">$220 – $320</p>
             </div>
           </div>
           <p className="text-gray-600 text-sm leading-relaxed">
@@ -167,7 +167,7 @@ export default function GutterCleaningPage() {
 
         {/* Our Process */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-[#1B2A4A] mb-6">Our Process</h2>
+          <h2 className="text-2xl font-bold text-[#1A3D2B] mb-6">Our Process</h2>
           <div className="space-y-5">
             {[
               'Submit a quote request. We confirm availability and send pricing within 24 hours.',
@@ -175,7 +175,7 @@ export default function GutterCleaningPage() {
               'Once complete, we send a written job report covering what was done and anything we noted during the inspection.',
             ].map((step, i) => (
               <div key={i} className="flex items-start gap-4">
-                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#1B2A4A] text-white flex items-center justify-center font-bold text-sm">
+                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#1A3D2B] text-white flex items-center justify-center font-bold text-sm">
                   {i + 1}
                 </span>
                 <p className="text-gray-700 pt-1">{step}</p>
@@ -186,13 +186,13 @@ export default function GutterCleaningPage() {
 
         {/* Areas We Service */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-[#1B2A4A] mb-6">Areas We Service</h2>
+          <h2 className="text-2xl font-bold text-[#1A3D2B] mb-6">Areas We Service</h2>
           <div className="flex flex-wrap gap-2">
             {suburbs.map((s) => (
               <Link
                 key={s.href}
                 href={s.href}
-                className="bg-[#1B2A4A] hover:bg-[#0F1A30] text-white px-4 py-2 rounded text-sm font-medium transition-colors"
+                className="bg-[#1A3D2B] hover:bg-[#0D2B1C] text-white px-4 py-2 rounded text-sm font-medium transition-colors"
               >
                 {s.label}
               </Link>
@@ -202,12 +202,12 @@ export default function GutterCleaningPage() {
 
         {/* FAQ */}
         <section className="mb-12">
-          <h2 className="text-2xl font-bold text-[#1B2A4A] mb-6">FAQ</h2>
+          <h2 className="text-2xl font-bold text-[#1A3D2B] mb-6">FAQ</h2>
           <FAQAccordion items={faqs} />
         </section>
 
         {/* CTA */}
-        <div className="bg-[#1B2A4A] rounded-xl p-8 text-center">
+        <div className="bg-[#1A3D2B] rounded-xl p-8 text-center">
           <h2 className="text-xl font-bold text-white mb-3">Ready to Book?</h2>
           <p className="text-gray-300 mb-6 text-sm">Get a firm quote within 24 hours. No obligation.</p>
           <Link

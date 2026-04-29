@@ -34,7 +34,7 @@ export default function GetAQuotePage() {
           ]}
         />
 
-        <h1 className="text-3xl sm:text-4xl font-bold text-[#1B2A4A] mb-4">
+        <h1 className="text-3xl sm:text-4xl font-bold text-[#1A3D2B] mb-4">
           Get Your Free Gutter Cleaning Quote
         </h1>
         <p className="text-gray-700 leading-relaxed mb-8">
@@ -58,14 +58,14 @@ export default function GetAQuotePage() {
 
         {/* What happens next */}
         <div className="mt-8 bg-[#F8F9FA] rounded-xl p-6">
-          <h2 className="font-semibold text-[#1B2A4A] mb-3">What Happens Next</h2>
+          <h2 className="font-semibold text-[#1A3D2B] mb-3">What Happens Next</h2>
           <ul className="space-y-2">
             {[
               'We receive your request and check availability in your suburb.',
               "We'll contact you within 24 hours with pricing and to confirm a time that works.",
             ].map((step, i) => (
               <li key={i} className="flex items-start gap-3 text-sm text-gray-700">
-                <span className="flex-shrink-0 w-5 h-5 rounded-full bg-[#1B2A4A] text-white flex items-center justify-center text-xs font-bold mt-0.5">
+                <span className="flex-shrink-0 w-5 h-5 rounded-full bg-[#1A3D2B] text-white flex items-center justify-center text-xs font-bold mt-0.5">
                   {i + 1}
                 </span>
                 {step}
